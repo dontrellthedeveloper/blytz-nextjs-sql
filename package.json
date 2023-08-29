@@ -41,6 +41,9 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
-    "prisma": "^5.2.0"
+    "@types/uuid": "^9.0.2",
+    "axios": "^1.5.0",
+    "prisma": "^5.2.0",
+    "uuid": "^9.0.0"
   }
 }
