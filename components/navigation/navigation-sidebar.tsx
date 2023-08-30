@@ -9,6 +9,7 @@ import { db } from "@/lib/db";
 
 import { NavigationAction } from "./navigation-action";
 import { NavigationItem } from "./navigation-item";
+import Image from "next/image";
 
 export const NavigationSidebar = async () => {
   const profile = await currentProfile();
@@ -46,6 +47,12 @@ export const NavigationSidebar = async () => {
         ))}
       </ScrollArea>
       <div className="pb-3 mt-auto flex items-center flex-col gap-y-4">
+      <Image
+      src="/blytz-trans.png"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />
         <ModeToggle />
         <UserButton
           afterSignOutUrl="/"
